@@ -415,6 +415,73 @@ tr:last-child td{border-bottom:none}
 .auth-message{min-height:18px;margin-top:12px;font-size:11px;color:var(--muted);text-align:center}.auth-note{margin-top:16px;padding-top:14px;border-top:1px solid var(--border);font-size:10px;color:var(--muted);line-height:1.5}
 .auth-logout{border:1px solid var(--border);background:transparent;color:var(--muted);font-family:'DM Mono',monospace;font-size:10px;border-radius:20px;padding:4px 10px;cursor:pointer}.auth-logout:hover{color:var(--text);border-color:var(--accent)}
 
+
+/* ══════════════════════════════════════════
+   ACCORDÉON PATRIMOINE — DARK THEME
+══════════════════════════════════════════ */
+.patr-section{font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.75rem}
+.patr-total-row{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:1.2rem}
+.patr-total-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.4rem;font-weight:700;letter-spacing:-.03em}
+.patr-total-sub{font-size:.65rem;color:var(--accent);margin-top:.2rem}
+.patr-cats{display:flex;flex-direction:column;gap:8px}
+.patr-cat{background:var(--surface2);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .2s}
+.patr-cat:hover{border-color:rgba(255,255,255,.12)}
+.patr-cat-row{display:flex;align-items:center;padding:13px 16px;gap:12px;cursor:pointer;transition:background .15s}
+.patr-cat-row:hover{background:rgba(255,255,255,.03)}
+.patr-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.patr-left{flex:1;min-width:0}
+.patr-cat-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:600;color:var(--text)}
+.patr-cat-perf{font-size:.72rem;margin-top:3px}
+.patr-cat-sub{font-size:.72rem;color:var(--muted);margin-top:3px}
+.patr-right{text-align:right;flex-shrink:0}
+.patr-cat-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.35rem;font-weight:700;letter-spacing:-.03em;line-height:1;color:var(--text)}
+.patr-cat-alloc{font-size:.65rem;color:var(--muted);margin-top:4px}
+.patr-chev{font-size:.75rem;color:var(--muted);margin-left:8px;flex-shrink:0;transition:transform .22s;display:inline-block}
+.patr-chev.open{transform:rotate(180deg)}
+.patr-pos{color:var(--accent)}
+.patr-neg{color:var(--red)}
+
+.patr-body{display:none;border-top:1px solid var(--border);padding:10px 12px;flex-direction:column;gap:6px}
+.patr-body.open{display:flex}
+
+.patr-pos-item{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:border-color .15s}
+.patr-pos-item:hover{border-color:rgba(255,255,255,.15)}
+.patr-pos-icon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;letter-spacing:.02em}
+.patr-pos-left{flex:1;min-width:0}
+.patr-pos-name{font-size:.8rem;font-weight:600;color:var(--text);font-family:'Plus Jakarta Sans',sans-serif}
+.patr-pos-sub{font-size:.65rem;color:var(--muted);margin-top:1px;font-family:'DM Mono',monospace}
+.patr-pos-right{text-align:right;flex-shrink:0}
+.patr-pos-val{font-size:.85rem;font-weight:600;color:var(--text);font-family:'Plus Jakarta Sans',sans-serif}
+.patr-pos-perf{font-size:.65rem;margin-top:2px}
+.patr-pos-edit{font-size:.7rem;color:var(--muted);margin-left:6px}
+
+.patr-edit-panel{display:none;background:var(--surface);border:1px solid rgba(0,212,170,.25);border-radius:8px;padding:12px;flex-direction:column;gap:8px}
+.patr-edit-panel.open{display:flex}
+.patr-edit-title{font-size:.65rem;font-weight:600;color:var(--accent);letter-spacing:.05em;text-transform:uppercase;margin-bottom:2px}
+.patr-edit-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.patr-edit-grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.patr-field{display:flex;flex-direction:column;gap:3px}
+.patr-field label{font-size:.58rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.patr-field input,.patr-field select{font-size:.75rem;padding:6px 9px;border-radius:6px;width:100%;background:var(--surface2);border:1px solid var(--border);color:var(--text);font-family:'DM Mono',monospace;outline:none;transition:border-color .2s}
+.patr-field input:focus,.patr-field select:focus{border-color:var(--accent)}
+.patr-field input[readonly]{color:var(--muted)}
+.patr-computed{background:var(--surface2);border-radius:6px;padding:8px 10px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.patr-computed-lbl{font-size:.58rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:2px}
+.patr-computed-val{font-size:.8rem;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif}
+.patr-actions{display:flex;gap:6px;margin-top:2px}
+.patr-btn-save{flex:1;padding:7px;font-size:.72rem;border-radius:6px;background:var(--accent);color:#080c10;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:.03em;text-transform:uppercase}
+.patr-btn-cancel{padding:7px 10px;font-size:.72rem;border-radius:6px;cursor:pointer;background:transparent;border:1px solid var(--border);color:var(--muted);font-family:'DM Mono',monospace}
+.patr-btn-del{padding:7px 10px;font-size:.72rem;border-radius:6px;cursor:pointer;color:var(--red);border:1px solid rgba(232,65,66,.3);background:rgba(232,65,66,.08);font-family:'DM Mono',monospace}
+.patr-add-btn{display:flex;align-items:center;gap:6px;padding:8px 10px;border:1px dashed var(--border);border-radius:8px;color:var(--muted);font-size:.72rem;cursor:pointer;transition:all .15s;background:transparent;width:100%;font-family:'DM Mono',monospace;text-align:left}
+.patr-add-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(0,212,170,.04)}
+.patr-auto-badge{display:inline-flex;align-items:center;gap:3px;font-size:.6rem;padding:2px 7px;border-radius:10px;background:rgba(0,212,170,.12);color:var(--accent);border:1px solid rgba(0,212,170,.25)}
+.patr-manual-badge{display:inline-flex;align-items:center;gap:3px;font-size:.6rem;padding:2px 7px;border-radius:10px;background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
+.patr-rate-info{background:var(--surface2);border-radius:6px;padding:6px 9px;font-size:.65rem;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+.patr-rate-info strong{color:var(--text);font-family:'Plus Jakarta Sans',sans-serif}
+.patr-save-note{font-size:.6rem;color:var(--muted);text-align:center;letter-spacing:.04em;margin-top:4px}
+
+/* Mobile accordéon */
+.m-patr-wrap{padding:0 0 8px}
 </style>
 </head>
 <body class="auth-locked">
@@ -567,42 +634,211 @@ tr:last-child td{border-bottom:none}
   <div class="m-screen" id="m-screen-edit">
     <div class="m-screen-header">
       <div>
-        <div class="m-screen-title">Mettre à jour</div>
-        <div class="m-screen-sub">Synchronisé sur tous tes appareils</div>
+        <div class="m-screen-title">Patrimoine</div>
+        <div class="m-screen-sub">Gérer mes actifs</div>
+      </div>
+      <div class="sync-pill" id="m-sync-pill-patr">
+        <div class="sync-dot ok"></div>
+        <span>Live</span>
       </div>
     </div>
-    <div class="m-form-card">
-      <div class="m-mode-badge" id="m-mode-badge">
-        <div class="m-mode-dot" id="m-mode-dot" style="background:var(--blue)"></div>
-        <span id="m-mode-label">Chargement…</span>
+    <div class="m-patr-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px">
+        <div style="font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Répartition</div>
+        <div style="text-align:right">
+          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:-.03em" id="m-patr-total-val">—</div>
+          <div style="font-size:.65rem;color:var(--accent)" id="m-patr-total-sub">—</div>
+        </div>
       </div>
-      <div id="m-mode-init">
-        <div class="m-form-stitle">Épargne & liquidités</div>
-        <div class="m-field"><span class="m-field-label">Livret A</span><input type="number" id="m-i-livret" inputmode="decimal" placeholder="6300"><span class="m-field-unit">€</span></div>
-        <div class="m-field"><span class="m-field-label">USDT Crypto</span><input type="number" id="m-i-usdt" inputmode="decimal" placeholder="25000"><span class="m-field-unit">€</span></div>
-        <div class="m-form-stitle">Investissements</div>
-        <div class="m-field"><span class="m-field-label">PEA SP500</span><input type="number" id="m-i-pea" inputmode="decimal" placeholder="8000"><span class="m-field-unit">€</span></div>
-        <div class="m-field"><span class="m-field-label">BTC investi</span><input type="number" id="m-i-btceur" inputmode="decimal" placeholder="1000"><span class="m-field-unit">€</span></div>
-        <div class="m-field"><span class="m-field-label">BTC accumulé</span><input type="number" id="m-i-btcqty" inputmode="decimal" placeholder="0.012" step="0.0001"><span class="m-field-unit">BTC</span></div>
-        <div class="m-field"><span class="m-field-label">Adresse Bitstack</span><input type="text" id="m-i-btcaddr" inputmode="url" placeholder="bc1q..." style="font-size:11px;width:140px"></div>
-        <div class="m-form-stitle">Budget</div>
-        <div class="m-field"><span class="m-field-label">Épargne/mois</span><input type="number" id="m-i-savings" inputmode="decimal" placeholder="1500"><span class="m-field-unit">€</span></div>
-        <button class="m-btn-save init" onclick="saveAndSync()">🚀 Initialiser mon patrimoine</button>
+      <div class="patr-cats" id="m-patr-cats">
+
+  <!-- ── CASH ── -->
+  <div class="patr-cat">
+    <div class="patr-cat-row" onclick="patrToggle('cash')">
+      <div class="patr-icon" style="background:rgba(0,212,170,.15)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       </div>
-      <div id="m-mode-monthly" style="display:none">
-        <div class="m-form-stitle">Apports ce mois-ci</div>
-        <div class="m-field"><span class="m-field-label">+ Livret A</span><input type="number" id="m-a-livret" inputmode="decimal" value="0" min="0"><span class="m-field-unit">€</span></div>
-        <div class="m-field"><span class="m-field-label">+ USDT</span><input type="number" id="m-a-usdt" inputmode="decimal" value="0" min="0"><span class="m-field-unit">€</span></div>
-        <div class="m-field"><span class="m-field-label">+ PEA SP500</span><input type="number" id="m-a-pea" inputmode="decimal" value="0" min="0"><span class="m-field-unit">€</span></div>
-        <div class="m-field"><span class="m-field-label">+ BTC (€)</span><input type="number" id="m-a-btceur" inputmode="decimal" value="0" min="0"><span class="m-field-unit">€</span></div>
-        <div class="m-field"><span class="m-field-label">+ BTC (qty)</span><input type="number" id="m-a-btcqty" inputmode="decimal" value="0" step="0.0001" min="0"><span class="m-field-unit">BTC</span></div>
-        <div class="m-form-stitle">Budget mensuel</div>
-        <div class="m-field"><span class="m-field-label">Épargne/mois</span><input type="number" id="m-a-savings" inputmode="decimal"><span class="m-field-unit">€</span></div>
-        <div class="m-preview-box" id="m-preview-box"><span id="m-preview-text">—</span></div>
-        <button class="m-btn-save monthly" onclick="saveAndSync()">☁️ Enregistrer & synchroniser</button>
-        <button class="m-btn-link" onclick="switchToInit()">Corriger un total (mode initialisation)</button>
+      <div class="patr-left">
+        <div class="patr-cat-name">Cash</div>
+        <div class="patr-cat-sub" id="patr-cash-sub">Livret A · USDT</div>
       </div>
-      <div class="m-save-confirm" id="m-save-confirm"></div>
+      <div class="patr-right">
+        <div class="patr-cat-val" id="patr-cash-val">—</div>
+        <div class="patr-cat-alloc" id="patr-cash-alloc">—</div>
+      </div>
+      <span class="patr-chev" id="patr-chev-cash">▼</span>
+    </div>
+    <div class="patr-body" id="patr-body-cash">
+
+      <!-- Livret A -->
+      <div class="patr-pos-item" onclick="patrToggleEdit(event,'edit-livreta')">
+        <div class="patr-pos-icon" style="background:rgba(0,212,170,.15);color:#00d4aa">LA</div>
+        <div class="patr-pos-left">
+          <div class="patr-pos-name">Livret A</div>
+          <div class="patr-pos-sub">BoursoBank · EUR</div>
+        </div>
+        <div class="patr-pos-right">
+          <div class="patr-pos-val" id="patr-livreta-val">—</div>
+          <span class="patr-manual-badge">✏ Manuel</span>
+        </div>
+        <span class="patr-pos-edit">▼</span>
+      </div>
+      <div class="patr-edit-panel" id="edit-livreta">
+        <div class="patr-edit-title">Modifier — Livret A</div>
+        <div class="patr-edit-grid">
+          <div class="patr-field"><label>Valeur</label><input type="number" id="patr-la-val" placeholder="6300" inputmode="decimal"></div>
+          <div class="patr-field"><label>Devise</label><select id="patr-la-cur"><option value="EUR">EUR</option><option value="USD">USD</option></select></div>
+        </div>
+        <div class="patr-field"><label>Note (optionnel)</label><input type="text" id="patr-la-note" placeholder="ex: apport RP + urgence"></div>
+        <div class="patr-actions">
+          <button class="patr-btn-save" onclick="patrSaveLivreta()">Enregistrer</button>
+          <button class="patr-btn-cancel" onclick="patrToggleEdit(event,'edit-livreta')">Annuler</button>
+        </div>
+      </div>
+
+      <!-- USDT -->
+      <div class="patr-pos-item" onclick="patrToggleEdit(event,'edit-usdt')">
+        <div class="patr-pos-icon" style="background:rgba(0,180,216,.15);color:#00b4d8">₮</div>
+        <div class="patr-pos-left">
+          <div class="patr-pos-name">USDT</div>
+          <div class="patr-pos-sub">Stable coin · USD</div>
+        </div>
+        <div class="patr-pos-right">
+          <div class="patr-pos-val" id="patr-usdt-val">—</div>
+          <span class="patr-manual-badge">✏ Manuel</span>
+        </div>
+        <span class="patr-pos-edit">▼</span>
+      </div>
+      <div class="patr-edit-panel" id="edit-usdt">
+        <div class="patr-edit-title">Modifier — USDT</div>
+        <div class="patr-edit-grid">
+          <div class="patr-field"><label>Valeur</label><input type="number" id="patr-usdt-amount" placeholder="25000" inputmode="decimal"></div>
+          <div class="patr-field"><label>Devise</label><select id="patr-usdt-cur"><option value="USD">USD</option><option value="EUR">EUR</option></select></div>
+        </div>
+        <div class="patr-rate-info" id="patr-usdt-rate-info">
+          <span>Taux live USD/EUR</span><strong id="patr-usdt-converted">—</strong>
+        </div>
+        <div class="patr-actions">
+          <button class="patr-btn-save" onclick="patrSaveUsdt()">Enregistrer</button>
+          <button class="patr-btn-cancel" onclick="patrToggleEdit(event,'edit-usdt')">Annuler</button>
+        </div>
+      </div>
+
+      <button class="patr-add-btn" onclick="alert('Bientôt : ajouter un compte cash')">+ Ajouter un compte</button>
+    </div>
+  </div>
+
+  <!-- ── PEA ── -->
+  <div class="patr-cat">
+    <div class="patr-cat-row" onclick="patrToggle('pea')">
+      <div class="patr-icon" style="background:rgba(98,126,234,.15)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#627eea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="patr-left">
+        <div class="patr-cat-name">PEA</div>
+        <div class="patr-cat-perf patr-pos" id="patr-pea-perf">—</div>
+      </div>
+      <div class="patr-right">
+        <div class="patr-cat-val" id="patr-pea-val">—</div>
+        <div class="patr-cat-alloc" id="patr-pea-alloc">—</div>
+      </div>
+      <span class="patr-chev" id="patr-chev-pea">▼</span>
+    </div>
+    <div class="patr-body" id="patr-body-pea">
+
+      <!-- Position PEA -->
+      <div class="patr-pos-item" id="patr-pea-item" onclick="patrToggleEdit(event,'edit-pea')">
+        <div class="patr-pos-icon" style="background:rgba(98,126,234,.15);color:#627eea;font-size:9px">ETF</div>
+        <div class="patr-pos-left">
+          <div class="patr-pos-name" id="patr-pea-name">BNP Easy S&P 500</div>
+          <div class="patr-pos-sub" id="patr-pea-detail">—</div>
+        </div>
+        <div class="patr-pos-right">
+          <div class="patr-pos-val" id="patr-pea-pos-val">—</div>
+          <div class="patr-pos-perf patr-pos" id="patr-pea-pnl">—</div>
+        </div>
+        <span class="patr-pos-edit">▼</span>
+      </div>
+      <div class="patr-edit-panel" id="edit-pea">
+        <div class="patr-edit-title">Modifier la position PEA</div>
+        <div class="patr-edit-grid">
+          <div class="patr-field"><label>Code ISIN</label><input type="text" id="patr-pea-isin" placeholder="FR0011550185" value="FR0011550185"></div>
+          <div class="patr-field"><label>Nb de parts</label><input type="number" id="patr-pea-qty" placeholder="47" inputmode="decimal"></div>
+        </div>
+        <div class="patr-edit-grid">
+          <div class="patr-field"><label>PRU (€)</label><input type="number" id="patr-pea-pru" placeholder="177.25" step="0.01" inputmode="decimal"></div>
+          <div class="patr-field"><label>Valeur actuelle (€)</label><input type="number" id="patr-pea-cur-price" placeholder="210.87" step="0.01" inputmode="decimal"></div>
+        </div>
+        <div class="patr-computed" id="patr-pea-computed">
+          <div><div class="patr-computed-lbl">Valeur</div><div class="patr-computed-val" id="patr-pea-comp-val">—</div></div>
+          <div><div class="patr-computed-lbl">P&L €</div><div class="patr-computed-val patr-pos" id="patr-pea-comp-pnl">—</div></div>
+          <div><div class="patr-computed-lbl">P&L %</div><div class="patr-computed-val patr-pos" id="patr-pea-comp-pct">—</div></div>
+        </div>
+        <div class="patr-actions">
+          <button class="patr-btn-save" onclick="patrSavePea()">Enregistrer</button>
+          <button class="patr-btn-cancel" onclick="patrToggleEdit(event,'edit-pea')">Annuler</button>
+        </div>
+      </div>
+
+      <button class="patr-add-btn" onclick="alert('Bientôt : ajouter une position ISIN')">+ Ajouter une position (ISIN)</button>
+    </div>
+  </div>
+
+  <!-- ── CRYPTO ── -->
+  <div class="patr-cat">
+    <div class="patr-cat-row" onclick="patrToggle('crypto')">
+      <div class="patr-icon" style="background:rgba(247,147,26,.15)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f7931a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.5 8h4a1.5 1.5 0 0 1 0 3h-4m0 0h4.5a1.5 1.5 0 0 1 0 3H9.5M9.5 8v8m1-4h4"/></svg>
+      </div>
+      <div class="patr-left">
+        <div class="patr-cat-name">Crypto</div>
+        <div class="patr-cat-perf patr-pos" id="patr-crypto-perf">—</div>
+      </div>
+      <div class="patr-right">
+        <div class="patr-cat-val" id="patr-crypto-val">—</div>
+        <div class="patr-cat-alloc" id="patr-crypto-alloc">—</div>
+      </div>
+      <span class="patr-chev" id="patr-chev-crypto">▼</span>
+    </div>
+    <div class="patr-body" id="patr-body-crypto">
+
+      <!-- Bitstack BTC -->
+      <div class="patr-pos-item" onclick="patrToggleEdit(event,'edit-btc')">
+        <div class="patr-pos-icon" style="background:rgba(247,147,26,.15);color:#f7931a">₿</div>
+        <div class="patr-pos-left">
+          <div class="patr-pos-name">Bitstack — Bitcoin</div>
+          <div class="patr-pos-sub" id="patr-btc-addr-display">Adresse non configurée</div>
+        </div>
+        <div class="patr-pos-right">
+          <div class="patr-pos-val" id="patr-btc-pos-val">—</div>
+          <span class="patr-auto-badge" id="patr-btc-badge">↻ Auto</span>
+        </div>
+        <span class="patr-pos-edit">▼</span>
+      </div>
+      <div class="patr-edit-panel" id="edit-btc">
+        <div class="patr-edit-title">Portefeuille Bitcoin — Bitstack</div>
+        <div class="patr-field"><label>Adresse publique Bitcoin</label><input type="text" id="patr-btc-addr" placeholder="bc1q..." style="font-size:.65rem"></div>
+        <div class="patr-edit-grid">
+          <div class="patr-field"><label>PRU moyen</label><input type="number" id="patr-btc-pru" placeholder="ex: 28500" inputmode="decimal"></div>
+          <div class="patr-field"><label>Devise du PRU</label><select id="patr-btc-pru-cur"><option value="EUR">EUR</option><option value="USD">USD</option></select></div>
+        </div>
+        <div class="patr-computed" id="patr-btc-computed">
+          <div><div class="patr-computed-lbl">Solde auto</div><div class="patr-computed-val" id="patr-btc-comp-qty">—</div></div>
+          <div><div class="patr-computed-lbl">Valeur live</div><div class="patr-computed-val" id="patr-btc-comp-val">—</div></div>
+          <div><div class="patr-computed-lbl">P&L €</div><div class="patr-computed-val patr-pos" id="patr-btc-comp-pnl">—</div></div>
+        </div>
+        <div class="patr-auto-badge" style="align-self:flex-start">↻ Solde récupéré via Blockstream · automatique</div>
+        <div class="patr-actions">
+          <button class="patr-btn-save" onclick="patrSaveBtc()">Enregistrer</button>
+          <button class="patr-btn-cancel" onclick="patrToggleEdit(event,'edit-btc')">Annuler</button>
+        </div>
+      </div>
+
+      <button class="patr-add-btn" onclick="alert('Bientôt : Ethereum, Solana…')">+ Ajouter un portefeuille crypto</button>
+    </div>
+  </div>
+
+</div>    </div>
     </div>
   </div>
 
@@ -620,7 +856,7 @@ tr:last-child td{border-bottom:none}
   </div>
   <div class="tab" id="m-tab-edit" onclick="mSwitchTab('edit')">
     <div class="tab-icon"><svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></div>
-    <span class="tab-label">Éditer</span>
+    <span class="tab-label">Patrimoine</span>
   </div>
 </div>
 </div><!-- /view-mobile -->
@@ -754,20 +990,203 @@ tr:last-child td{border-bottom:none}
 
   <div class="d-grid-bottom">
     <div style="display:flex;flex-direction:column;gap:1.5rem">
-      <div class="d-card" style="--card-accent:var(--blue)">
-        <div class="d-table-title">Détail des enveloppes</div>
-        <table>
-          <thead>
-            <tr>
-              <th>Actif</th>
-              <th style="text-align:right">Valeur saisie</th>
-              <th style="text-align:right">Valeur live</th>
-              <th style="text-align:right">Alloc.</th>
-              <th style="text-align:right">Type</th>
-            </tr>
-          </thead>
-          <tbody id="d-assetTable"></tbody>
-        </table>
+      <div class="d-card" style="--card-accent:var(--accent);padding:1.2rem 1.2rem 1rem">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.8rem">
+          <div class="patr-section">Répartition du patrimoine</div>
+          <div style="text-align:right">
+            <div class="patr-total-val" id="d-patr-total-val">—</div>
+            <div class="patr-total-sub" id="d-patr-total-sub">—</div>
+          </div>
+        </div>
+        <div class="patr-cats" id="patr-cats">
+        
+          <!-- ── CASH ── -->
+          <div class="patr-cat">
+            <div class="patr-cat-row" onclick="patrToggle('cash')">
+              <div class="patr-icon" style="background:rgba(0,212,170,.15)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00d4aa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div class="patr-left">
+                <div class="patr-cat-name">Cash</div>
+                <div class="patr-cat-sub" id="patr-cash-sub">Livret A · USDT</div>
+              </div>
+              <div class="patr-right">
+                <div class="patr-cat-val" id="patr-cash-val">—</div>
+                <div class="patr-cat-alloc" id="patr-cash-alloc">—</div>
+              </div>
+              <span class="patr-chev" id="patr-chev-cash">▼</span>
+            </div>
+            <div class="patr-body" id="patr-body-cash">
+        
+              <!-- Livret A -->
+              <div class="patr-pos-item" onclick="patrToggleEdit(event,'edit-livreta')">
+                <div class="patr-pos-icon" style="background:rgba(0,212,170,.15);color:#00d4aa">LA</div>
+                <div class="patr-pos-left">
+                  <div class="patr-pos-name">Livret A</div>
+                  <div class="patr-pos-sub">BoursoBank · EUR</div>
+                </div>
+                <div class="patr-pos-right">
+                  <div class="patr-pos-val" id="patr-livreta-val">—</div>
+                  <span class="patr-manual-badge">✏ Manuel</span>
+                </div>
+                <span class="patr-pos-edit">▼</span>
+              </div>
+              <div class="patr-edit-panel" id="edit-livreta">
+                <div class="patr-edit-title">Modifier — Livret A</div>
+                <div class="patr-edit-grid">
+                  <div class="patr-field"><label>Valeur</label><input type="number" id="patr-la-val" placeholder="6300" inputmode="decimal"></div>
+                  <div class="patr-field"><label>Devise</label><select id="patr-la-cur"><option value="EUR">EUR</option><option value="USD">USD</option></select></div>
+                </div>
+                <div class="patr-field"><label>Note (optionnel)</label><input type="text" id="patr-la-note" placeholder="ex: apport RP + urgence"></div>
+                <div class="patr-actions">
+                  <button class="patr-btn-save" onclick="patrSaveLivreta()">Enregistrer</button>
+                  <button class="patr-btn-cancel" onclick="patrToggleEdit(event,'edit-livreta')">Annuler</button>
+                </div>
+              </div>
+        
+              <!-- USDT -->
+              <div class="patr-pos-item" onclick="patrToggleEdit(event,'edit-usdt')">
+                <div class="patr-pos-icon" style="background:rgba(0,180,216,.15);color:#00b4d8">₮</div>
+                <div class="patr-pos-left">
+                  <div class="patr-pos-name">USDT</div>
+                  <div class="patr-pos-sub">Stable coin · USD</div>
+                </div>
+                <div class="patr-pos-right">
+                  <div class="patr-pos-val" id="patr-usdt-val">—</div>
+                  <span class="patr-manual-badge">✏ Manuel</span>
+                </div>
+                <span class="patr-pos-edit">▼</span>
+              </div>
+              <div class="patr-edit-panel" id="edit-usdt">
+                <div class="patr-edit-title">Modifier — USDT</div>
+                <div class="patr-edit-grid">
+                  <div class="patr-field"><label>Valeur</label><input type="number" id="patr-usdt-amount" placeholder="25000" inputmode="decimal"></div>
+                  <div class="patr-field"><label>Devise</label><select id="patr-usdt-cur"><option value="USD">USD</option><option value="EUR">EUR</option></select></div>
+                </div>
+                <div class="patr-rate-info" id="patr-usdt-rate-info">
+                  <span>Taux live USD/EUR</span><strong id="patr-usdt-converted">—</strong>
+                </div>
+                <div class="patr-actions">
+                  <button class="patr-btn-save" onclick="patrSaveUsdt()">Enregistrer</button>
+                  <button class="patr-btn-cancel" onclick="patrToggleEdit(event,'edit-usdt')">Annuler</button>
+                </div>
+              </div>
+        
+              <button class="patr-add-btn" onclick="alert('Bientôt : ajouter un compte cash')">+ Ajouter un compte</button>
+            </div>
+          </div>
+        
+          <!-- ── PEA ── -->
+          <div class="patr-cat">
+            <div class="patr-cat-row" onclick="patrToggle('pea')">
+              <div class="patr-icon" style="background:rgba(98,126,234,.15)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#627eea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="patr-left">
+                <div class="patr-cat-name">PEA</div>
+                <div class="patr-cat-perf patr-pos" id="patr-pea-perf">—</div>
+              </div>
+              <div class="patr-right">
+                <div class="patr-cat-val" id="patr-pea-val">—</div>
+                <div class="patr-cat-alloc" id="patr-pea-alloc">—</div>
+              </div>
+              <span class="patr-chev" id="patr-chev-pea">▼</span>
+            </div>
+            <div class="patr-body" id="patr-body-pea">
+        
+              <!-- Position PEA -->
+              <div class="patr-pos-item" id="patr-pea-item" onclick="patrToggleEdit(event,'edit-pea')">
+                <div class="patr-pos-icon" style="background:rgba(98,126,234,.15);color:#627eea;font-size:9px">ETF</div>
+                <div class="patr-pos-left">
+                  <div class="patr-pos-name" id="patr-pea-name">BNP Easy S&P 500</div>
+                  <div class="patr-pos-sub" id="patr-pea-detail">—</div>
+                </div>
+                <div class="patr-pos-right">
+                  <div class="patr-pos-val" id="patr-pea-pos-val">—</div>
+                  <div class="patr-pos-perf patr-pos" id="patr-pea-pnl">—</div>
+                </div>
+                <span class="patr-pos-edit">▼</span>
+              </div>
+              <div class="patr-edit-panel" id="edit-pea">
+                <div class="patr-edit-title">Modifier la position PEA</div>
+                <div class="patr-edit-grid">
+                  <div class="patr-field"><label>Code ISIN</label><input type="text" id="patr-pea-isin" placeholder="FR0011550185" value="FR0011550185"></div>
+                  <div class="patr-field"><label>Nb de parts</label><input type="number" id="patr-pea-qty" placeholder="47" inputmode="decimal"></div>
+                </div>
+                <div class="patr-edit-grid">
+                  <div class="patr-field"><label>PRU (€)</label><input type="number" id="patr-pea-pru" placeholder="177.25" step="0.01" inputmode="decimal"></div>
+                  <div class="patr-field"><label>Valeur actuelle (€)</label><input type="number" id="patr-pea-cur-price" placeholder="210.87" step="0.01" inputmode="decimal"></div>
+                </div>
+                <div class="patr-computed" id="patr-pea-computed">
+                  <div><div class="patr-computed-lbl">Valeur</div><div class="patr-computed-val" id="patr-pea-comp-val">—</div></div>
+                  <div><div class="patr-computed-lbl">P&L €</div><div class="patr-computed-val patr-pos" id="patr-pea-comp-pnl">—</div></div>
+                  <div><div class="patr-computed-lbl">P&L %</div><div class="patr-computed-val patr-pos" id="patr-pea-comp-pct">—</div></div>
+                </div>
+                <div class="patr-actions">
+                  <button class="patr-btn-save" onclick="patrSavePea()">Enregistrer</button>
+                  <button class="patr-btn-cancel" onclick="patrToggleEdit(event,'edit-pea')">Annuler</button>
+                </div>
+              </div>
+        
+              <button class="patr-add-btn" onclick="alert('Bientôt : ajouter une position ISIN')">+ Ajouter une position (ISIN)</button>
+            </div>
+          </div>
+        
+          <!-- ── CRYPTO ── -->
+          <div class="patr-cat">
+            <div class="patr-cat-row" onclick="patrToggle('crypto')">
+              <div class="patr-icon" style="background:rgba(247,147,26,.15)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f7931a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.5 8h4a1.5 1.5 0 0 1 0 3h-4m0 0h4.5a1.5 1.5 0 0 1 0 3H9.5M9.5 8v8m1-4h4"/></svg>
+              </div>
+              <div class="patr-left">
+                <div class="patr-cat-name">Crypto</div>
+                <div class="patr-cat-perf patr-pos" id="patr-crypto-perf">—</div>
+              </div>
+              <div class="patr-right">
+                <div class="patr-cat-val" id="patr-crypto-val">—</div>
+                <div class="patr-cat-alloc" id="patr-crypto-alloc">—</div>
+              </div>
+              <span class="patr-chev" id="patr-chev-crypto">▼</span>
+            </div>
+            <div class="patr-body" id="patr-body-crypto">
+        
+              <!-- Bitstack BTC -->
+              <div class="patr-pos-item" onclick="patrToggleEdit(event,'edit-btc')">
+                <div class="patr-pos-icon" style="background:rgba(247,147,26,.15);color:#f7931a">₿</div>
+                <div class="patr-pos-left">
+                  <div class="patr-pos-name">Bitstack — Bitcoin</div>
+                  <div class="patr-pos-sub" id="patr-btc-addr-display">Adresse non configurée</div>
+                </div>
+                <div class="patr-pos-right">
+                  <div class="patr-pos-val" id="patr-btc-pos-val">—</div>
+                  <span class="patr-auto-badge" id="patr-btc-badge">↻ Auto</span>
+                </div>
+                <span class="patr-pos-edit">▼</span>
+              </div>
+              <div class="patr-edit-panel" id="edit-btc">
+                <div class="patr-edit-title">Portefeuille Bitcoin — Bitstack</div>
+                <div class="patr-field"><label>Adresse publique Bitcoin</label><input type="text" id="patr-btc-addr" placeholder="bc1q..." style="font-size:.65rem"></div>
+                <div class="patr-edit-grid">
+                  <div class="patr-field"><label>PRU moyen</label><input type="number" id="patr-btc-pru" placeholder="ex: 28500" inputmode="decimal"></div>
+                  <div class="patr-field"><label>Devise du PRU</label><select id="patr-btc-pru-cur"><option value="EUR">EUR</option><option value="USD">USD</option></select></div>
+                </div>
+                <div class="patr-computed" id="patr-btc-computed">
+                  <div><div class="patr-computed-lbl">Solde auto</div><div class="patr-computed-val" id="patr-btc-comp-qty">—</div></div>
+                  <div><div class="patr-computed-lbl">Valeur live</div><div class="patr-computed-val" id="patr-btc-comp-val">—</div></div>
+                  <div><div class="patr-computed-lbl">P&L €</div><div class="patr-computed-val patr-pos" id="patr-btc-comp-pnl">—</div></div>
+                </div>
+                <div class="patr-auto-badge" style="align-self:flex-start">↻ Solde récupéré via Blockstream · automatique</div>
+                <div class="patr-actions">
+                  <button class="patr-btn-save" onclick="patrSaveBtc()">Enregistrer</button>
+                  <button class="patr-btn-cancel" onclick="patrToggleEdit(event,'edit-btc')">Annuler</button>
+                </div>
+              </div>
+        
+              <button class="patr-add-btn" onclick="alert('Bientôt : Ethereum, Solana…')">+ Ajouter un portefeuille crypto</button>
+            </div>
+          </div>
+        
+        </div>
       </div>
       <div class="d-card" style="--card-accent:var(--red)">
         <div class="d-fire-title">🔥 Progression FIRE</div>
@@ -849,7 +1268,7 @@ const MODE_KEY    = 'fire_legacy_mode';
 const FIRE_TARGET = 900000;
 const COLORS      = ['#00d4aa','#f7931a','#627eea','#00b4d8'];
 
-const DEFAULT = { livret:0, pea:0, usdt:0, btcEur:0, btcQty:0, savings:0, btcAddress:'' };
+const DEFAULT = { livret:0, pea:0, usdt:0, btcEur:0, btcQty:0, savings:0, btcAddress:'', btcPru:0, peaIsin:'FR0011550185', peaQty:0, peaPru:0, peaCurPrice:0 };
 
 let data      = loadLocal();
 let history   = loadHistory();
@@ -1029,6 +1448,8 @@ async function fetchBitcoinBalance() {
 }
 
 async function fetchPrices() {
+  // Taux USD/EUR live
+  try { const rx=await fetch('https://api.frankfurter.app/latest?from=USD&to=EUR'); if(rx.ok){const jx=await rx.json(); usdEurRate=jx.rates.EUR||0.924; }} catch(e){}
   await Promise.all([fetchBTC(), fetchSP500()]);
   const now=new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'});
   // Mobile
@@ -1308,6 +1729,7 @@ function render() {
   document.getElementById('m-bar-gap').textContent='Manque : '+fmtK(FIRE_TARGET-total);
   document.getElementById('m-lastUpdate').textContent='Màj '+new Date().toLocaleDateString('fr-FR',{day:'2-digit',month:'short',year:'numeric'});
   mDrawDonut(segs,total); mBuildAssets(segs,total,btcDiff);
+  patrRender();
 
   // ── DESKTOP RENDER
   document.getElementById('d-btc-live-val').textContent=prices.btcEur?fmt(btcLive):'—';
@@ -1440,6 +1862,276 @@ applyMode(loadMode());
 render();
 drawChart(mCurrentTf,'m');
 drawChart(dCurrentTf,'d');
+
+/* ═══════════════════════════════════════
+   LOGIQUE ACCORDÉON PATRIMOINE
+═══════════════════════════════════════ */
+
+// ── Taux de change USD/EUR (mis à jour avec fetchPrices)
+let usdEurRate = 0.924;
+
+// ── Toggle accordéon ──────────────────────────────────
+function patrToggle(id) {
+  const body = document.getElementById('patr-body-' + id);
+  const chev = document.getElementById('patr-chev-' + id);
+  if (!body) return;
+  const open = body.classList.toggle('open');
+  if (chev) chev.classList.toggle('open', open);
+}
+
+function patrToggleEdit(event, id) {
+  event.stopPropagation();
+  const panel = document.getElementById(id);
+  if (!panel) return;
+  // Fermer les autres panels ouverts
+  document.querySelectorAll('.patr-edit-panel.open').forEach(p => {
+    if (p.id !== id) p.classList.remove('open');
+  });
+  panel.classList.toggle('open');
+  // Pré-remplir les champs avec les données actuelles
+  if (panel.classList.contains('open')) patrFillEdit(id);
+}
+
+function patrFillEdit(id) {
+  if (id === 'edit-livreta') {
+    const el = document.getElementById('patr-la-val');
+    if (el) el.value = data.livret || '';
+  }
+  if (id === 'edit-usdt') {
+    const el = document.getElementById('patr-usdt-amount');
+    if (el) el.value = data.usdt || '';
+    patrUpdateUsdtRate();
+  }
+  if (id === 'edit-pea') {
+    const isin = document.getElementById('patr-pea-isin');
+    const qty  = document.getElementById('patr-pea-qty');
+    const pru  = document.getElementById('patr-pea-pru');
+    const cur  = document.getElementById('patr-pea-cur-price');
+    if (isin) isin.value = data.peaIsin || 'FR0011550185';
+    if (qty)  qty.value  = data.peaQty  || '';
+    if (pru)  pru.value  = data.peaPru  || '';
+    if (cur)  cur.value  = data.peaCurPrice || '';
+    patrUpdatePeaComputed();
+  }
+  if (id === 'edit-btc') {
+    const addr = document.getElementById('patr-btc-addr');
+    const pru  = document.getElementById('patr-btc-pru');
+    if (addr) addr.value = data.btcAddress || '';
+    if (pru)  pru.value  = data.btcPru || '';
+    patrUpdateBtcComputed();
+  }
+}
+
+// ── Calcul live USDT rate ─────────────────────────────
+function patrUpdateUsdtRate() {
+  const amountEl = document.getElementById('patr-usdt-amount');
+  const curEl    = document.getElementById('patr-usdt-cur');
+  const infoEl   = document.getElementById('patr-usdt-rate-info');
+  const convEl   = document.getElementById('patr-usdt-converted');
+  if (!amountEl || !infoEl) return;
+  const amount = parseFloat(amountEl.value) || 0;
+  const cur    = curEl ? curEl.value : 'USD';
+  const eur    = cur === 'USD' ? amount * usdEurRate : amount;
+  if (convEl) convEl.textContent = fmt(eur);
+}
+
+// ── Calcul PEA P&L ───────────────────────────────────
+function patrUpdatePeaComputed() {
+  const qty    = parseFloat(document.getElementById('patr-pea-qty')?.value) || 0;
+  const pru    = parseFloat(document.getElementById('patr-pea-pru')?.value) || 0;
+  const curP   = parseFloat(document.getElementById('patr-pea-cur-price')?.value) || 0;
+  const val    = qty * curP;
+  const cost   = qty * pru;
+  const pnlEur = val - cost;
+  const pnlPct = cost > 0 ? (pnlEur / cost) * 100 : 0;
+  const valEl  = document.getElementById('patr-pea-comp-val');
+  const pnlEl  = document.getElementById('patr-pea-comp-pnl');
+  const pctEl  = document.getElementById('patr-pea-comp-pct');
+  if (valEl) valEl.textContent = val > 0 ? fmt(val) : '—';
+  if (pnlEl) {
+    pnlEl.textContent = val > 0 ? (pnlEur >= 0 ? '+' : '') + fmt(pnlEur) : '—';
+    pnlEl.className   = 'patr-computed-val ' + (pnlEur >= 0 ? 'patr-pos' : 'patr-neg');
+  }
+  if (pctEl) {
+    pctEl.textContent = val > 0 ? (pnlPct >= 0 ? '+' : '') + pnlPct.toFixed(2) + '%' : '—';
+    pctEl.className   = 'patr-computed-val ' + (pnlPct >= 0 ? 'patr-pos' : 'patr-neg');
+  }
+}
+
+// ── Calcul BTC P&L ───────────────────────────────────
+function patrUpdateBtcComputed() {
+  const qtyEl  = document.getElementById('patr-btc-comp-qty');
+  const valEl  = document.getElementById('patr-btc-comp-val');
+  const pnlEl  = document.getElementById('patr-btc-comp-pnl');
+  const pru    = parseFloat(document.getElementById('patr-btc-pru')?.value) || 0;
+  const pruCur = document.getElementById('patr-btc-pru-cur')?.value || 'EUR';
+  const pruEur = pruCur === 'USD' ? pru * usdEurRate : pru;
+  const btcLive = prices.btcEur ? data.btcQty * prices.btcEur : data.btcEur;
+  const cost   = data.btcQty * pruEur;
+  const pnlEur = btcLive - cost;
+  if (qtyEl) qtyEl.textContent = data.btcQty > 0 ? data.btcQty.toFixed(6) + ' ₿' : '—';
+  if (valEl) valEl.textContent = btcLive > 0 ? fmt(btcLive) : '—';
+  if (pnlEl) {
+    pnlEl.textContent = btcLive > 0 && cost > 0 ? (pnlEur >= 0 ? '+' : '') + fmt(pnlEur) : '—';
+    pnlEl.className   = 'patr-computed-val ' + (pnlEur >= 0 ? 'patr-pos' : 'patr-neg');
+  }
+}
+
+// ── Attacher listeners live ───────────────────────────
+setTimeout(() => {
+  const laVal  = document.getElementById('patr-la-val');
+  const usdtAm = document.getElementById('patr-usdt-amount');
+  const usdtCu = document.getElementById('patr-usdt-cur');
+  const peaQty = document.getElementById('patr-pea-qty');
+  const peaPru = document.getElementById('patr-pea-pru');
+  const peaCur = document.getElementById('patr-pea-cur-price');
+  const btcPru = document.getElementById('patr-btc-pru');
+  [usdtAm, usdtCu].forEach(el => el?.addEventListener('input', patrUpdateUsdtRate));
+  [peaQty, peaPru, peaCur].forEach(el => el?.addEventListener('input', patrUpdatePeaComputed));
+  [btcPru].forEach(el => el?.addEventListener('input', patrUpdateBtcComputed));
+}, 300);
+
+// ── Sauvegarde Livret A ───────────────────────────────
+function patrSaveLivreta() {
+  const v   = parseFloat(document.getElementById('patr-la-val')?.value);
+  const cur = document.getElementById('patr-la-cur')?.value || 'EUR';
+  if (isNaN(v)) return;
+  data.livret = cur === 'USD' ? v * usdEurRate : v;
+  patrPersist();
+  document.getElementById('edit-livreta').classList.remove('open');
+}
+
+// ── Sauvegarde USDT ───────────────────────────────────
+function patrSaveUsdt() {
+  const v   = parseFloat(document.getElementById('patr-usdt-amount')?.value);
+  const cur = document.getElementById('patr-usdt-cur')?.value || 'USD';
+  if (isNaN(v)) return;
+  data.usdt = cur === 'USD' ? v * usdEurRate : v;
+  patrPersist();
+  document.getElementById('edit-usdt').classList.remove('open');
+}
+
+// ── Sauvegarde PEA ────────────────────────────────────
+function patrSavePea() {
+  const qty  = parseFloat(document.getElementById('patr-pea-qty')?.value);
+  const pru  = parseFloat(document.getElementById('patr-pea-pru')?.value);
+  const curP = parseFloat(document.getElementById('patr-pea-cur-price')?.value);
+  const isin = document.getElementById('patr-pea-isin')?.value?.trim();
+  if (isNaN(qty) || qty <= 0) return;
+  data.peaIsin      = isin || 'FR0011550185';
+  data.peaQty       = qty;
+  data.peaPru       = pru || 0;
+  data.peaCurPrice  = curP || 0;
+  data.pea          = qty * (curP || 0);
+  patrPersist();
+  document.getElementById('edit-pea').classList.remove('open');
+}
+
+// ── Sauvegarde BTC / adresse ──────────────────────────
+function patrSaveBtc() {
+  const addr = document.getElementById('patr-btc-addr')?.value?.trim();
+  const pru  = parseFloat(document.getElementById('patr-btc-pru')?.value);
+  const pruCur = document.getElementById('patr-btc-pru-cur')?.value || 'EUR';
+  if (addr) {
+    data.btcAddress = addr;
+    data.btcPru     = isNaN(pru) ? 0 : (pruCur === 'USD' ? pru * usdEurRate : pru);
+    // Déclencher fetch immédiat du solde
+    fetchBitcoinBalance();
+  }
+  patrPersist();
+  document.getElementById('edit-btc').classList.remove('open');
+}
+
+// ── Persistance commune ───────────────────────────────
+function patrPersist() {
+  saveLocal();
+  const btcLive = prices.btcEur ? data.btcQty * prices.btcEur : data.btcEur;
+  recordHistory(data.livret + data.pea + data.usdt + btcLive);
+  render();
+  patrRender();
+  if (fbEnabled && window._fbSave) {
+    window._fbSave(data).then(() => setSyncStatus('ok', 'Synchronisé ✓')).catch(() => {});
+  }
+}
+
+// ── Render accordéon ─────────────────────────────────
+function patrRender() {
+  const btcLive  = prices.btcEur ? data.btcQty * prices.btcEur : data.btcEur;
+  const total    = data.livret + data.pea + data.usdt + btcLive;
+  const cashVal  = data.livret + data.usdt;
+  const peaVal   = data.pea;
+  const crypVal  = btcLive;
+
+  // Totaux
+  const totalStr = total > 0 ? fmt(total) : '—';
+  ['d-patr-total-val', 'm-patr-total-val'].forEach(id => {
+    const el = document.getElementById(id); if (el) el.textContent = totalStr;
+  });
+
+  // BTC P&L global
+  const btcCost  = data.btcPru ? data.btcQty * data.btcPru : data.btcEur;
+  const btcPnl   = btcLive - btcCost;
+  const btcPnlStr = btcCost > 0 ? (btcPnl >= 0 ? '+' : '') + fmt(btcPnl) + ' depuis l'achat' : 'Auto · live';
+  ['d-patr-total-sub', 'm-patr-total-sub'].forEach(id => {
+    const el = document.getElementById(id); if (el) { el.textContent = btcPnlStr; el.className = btcPnl >= 0 ? 'patr-total-sub' : 'patr-total-sub patr-neg'; }
+  });
+
+  // ── Cash ──────────────────────────────────────────
+  document.querySelectorAll('#patr-cash-val').forEach(el => el.textContent = fmt(cashVal));
+  document.querySelectorAll('#patr-cash-alloc').forEach(el => el.textContent = total > 0 ? (cashVal/total*100).toFixed(1) + '%' : '—');
+  document.querySelectorAll('#patr-livreta-val').forEach(el => el.textContent = fmt(data.livret));
+  document.querySelectorAll('#patr-usdt-val').forEach(el => el.textContent = fmt(data.usdt));
+
+  // ── PEA ───────────────────────────────────────────
+  document.querySelectorAll('#patr-pea-val').forEach(el => el.textContent = fmt(peaVal));
+  document.querySelectorAll('#patr-pea-alloc').forEach(el => el.textContent = total > 0 ? (peaVal/total*100).toFixed(1) + '%' : '—');
+  document.querySelectorAll('#patr-pea-pos-val').forEach(el => el.textContent = fmt(peaVal));
+  // P&L PEA
+  if (data.peaQty && data.peaPru && data.peaCurPrice) {
+    const peaCost = data.peaQty * data.peaPru;
+    const peaPnl  = peaVal - peaCost;
+    const peaPct  = peaCost > 0 ? (peaPnl / peaCost * 100).toFixed(2) : 0;
+    const sign    = peaPnl >= 0 ? '+' : '';
+    const perfStr = sign + fmt(peaPnl) + ' · ' + sign + peaPct + '%';
+    document.querySelectorAll('#patr-pea-perf, #patr-pea-pnl').forEach(el => {
+      el.textContent = perfStr;
+      el.className   = el.className.replace(/patr-pos|patr-neg/g, '') + (peaPnl >= 0 ? ' patr-pos' : ' patr-neg');
+    });
+    document.querySelectorAll('#patr-pea-detail').forEach(el => {
+      el.textContent = (data.peaIsin || '') + (data.peaQty ? ' · ' + data.peaQty + ' parts' : '') + (data.peaPru ? ' · PRU ' + fmt(data.peaPru) : '');
+    });
+  } else {
+    document.querySelectorAll('#patr-pea-perf, #patr-pea-pnl').forEach(el => el.textContent = 'Configurez vos parts →');
+  }
+
+  // ── Crypto ────────────────────────────────────────
+  document.querySelectorAll('#patr-crypto-val').forEach(el => el.textContent = fmt(crypVal));
+  document.querySelectorAll('#patr-crypto-alloc').forEach(el => el.textContent = total > 0 ? (crypVal/total*100).toFixed(1) + '%' : '—');
+  document.querySelectorAll('#patr-btc-pos-val').forEach(el => el.textContent = fmt(crypVal));
+  if (btcCost > 0) {
+    const sign = btcPnl >= 0 ? '+' : '';
+    document.querySelectorAll('#patr-crypto-perf').forEach(el => {
+      el.textContent = sign + fmt(btcPnl) + ' · auto';
+      el.className   = 'patr-cat-perf ' + (btcPnl >= 0 ? 'patr-pos' : 'patr-neg');
+    });
+  } else {
+    document.querySelectorAll('#patr-crypto-perf').forEach(el => { el.textContent = 'Configurez l'adresse →'; });
+  }
+  // Adresse affichée tronquée
+  const addr = data.btcAddress;
+  document.querySelectorAll('#patr-btc-addr-display').forEach(el => {
+    el.textContent = addr && addr.length > 10 ? addr.slice(0, 8) + '…' + addr.slice(-6) : 'Adresse non configurée';
+  });
+  document.querySelectorAll('#patr-btc-comp-qty').forEach(el => { el.textContent = data.btcQty > 0 ? data.btcQty.toFixed(6) + ' ₿' : '—'; });
+  document.querySelectorAll('#patr-btc-comp-val').forEach(el => { el.textContent = crypVal > 0 ? fmt(crypVal) : '—'; });
+  document.querySelectorAll('#patr-btc-comp-pnl').forEach(el => {
+    if (btcCost > 0) {
+      el.textContent = (btcPnl >= 0 ? '+' : '') + fmt(btcPnl);
+      el.className   = 'patr-computed-val ' + (btcPnl >= 0 ? 'patr-pos' : 'patr-neg');
+    } else { el.textContent = '—'; }
+  });
+}
+
 </script>
 </body>
 </html>
