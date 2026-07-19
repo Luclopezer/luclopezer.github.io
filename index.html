@@ -291,20 +291,20 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'DM Mon
 .d-last-update{font-size:.6rem;color:var(--muted)}
 
 /* PRICE STRIP DESKTOP */
-.d-price-strip{display:flex;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:2rem}
-.d-price-item{flex:1;background:var(--surface);padding:.9rem 1.2rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
-.d-price-ticker-label{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.2rem}
-.d-price-ticker-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700}
-.d-price-ticker-chg{font-size:.7rem;font-weight:600}
+
+
+
+
+
 .d-price-ticker-chg.pos{color:var(--accent)}.d-price-ticker-chg.neg{color:var(--red)}.d-price-ticker-chg.neu{color:var(--muted)}
-.d-price-ticker-time{font-size:.58rem;color:var(--muted);margin-top:.1rem}
+
 
 /* CARD */
 .d-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;position:relative;overflow:hidden}
 .d-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--card-accent,var(--accent)),transparent);opacity:.6}
 
 /* GRIDS */
-.d-grid-top{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-bottom:1.5rem}
+
 .d-grid-mid{display:grid;grid-template-columns:2fr 1fr;gap:1.5rem;margin-bottom:1.5rem}
 .d-grid-bottom{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 
@@ -312,12 +312,12 @@ html,body{height:100%;background:var(--bg);color:var(--text);font-family:'DM Mon
 .d-card-label{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem}
 .d-card-value{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.6rem;font-weight:800;letter-spacing:-.03em;margin-bottom:.3rem}
 .d-card-sub{font-size:.65rem;color:var(--muted);margin-bottom:.5rem}
-.d-card-badge{display:inline-block;font-size:.6rem;padding:.2rem .5rem;border-radius:.3rem;background:rgba(0,212,170,.1);color:var(--accent);border:1px solid rgba(0,212,170,.2)}
-.d-badge-warn{background:rgba(247,147,26,.1);color:var(--gold);border-color:rgba(247,147,26,.2)}
-.d-badge-info{background:rgba(98,126,234,.1);color:var(--blue);border-color:rgba(98,126,234,.2)}
-.d-stat-btc{--card-accent:var(--gold)}
-.d-stat-pea{--card-accent:var(--blue)}
-.d-stat-fire{--card-accent:var(--red)}
+
+
+
+
+
+
 
 /* CHART DESKTOP */
 .d-chart-header-row{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.2rem;flex-wrap:wrap;gap:.8rem}
@@ -371,37 +371,37 @@ tr:last-child td{border-bottom:none}
 .d-td-live-chg.pos{color:var(--accent)}.d-td-live-chg.neg{color:var(--red)}
 
 /* FIRE PROGRESS DESKTOP */
-.d-fire-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:.9rem;font-weight:700;margin-bottom:1.5rem}
+
 .d-fire-goal{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem}
 .d-fire-goal-label{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
 .d-fire-goal-value{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700}
 .d-progress-bar{height:6px;background:var(--border);border-radius:3px;overflow:hidden;margin-bottom:1.5rem}
 .d-progress-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--red));transition:width 1s ease}
-.d-fire-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
+
 .d-fire-stat-label{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.2rem}
 .d-fire-stat-value{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:700}
 
 /* FORM DESKTOP */
-.d-edit-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:.9rem;font-weight:700;margin-bottom:1.2rem}
-.d-mode-badge{display:flex;align-items:center;gap:.5rem;margin-bottom:1rem;padding:.5rem .75rem;border-radius:8px;border:1px solid var(--border);background:var(--surface2)}
-.d-mode-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
-.d-mode-label{font-size:.65rem;color:var(--muted);letter-spacing:.05em}
-.d-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
-.d-form-group{display:flex;flex-direction:column;gap:.3rem}
-.d-form-group label{font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
-.d-form-group input{background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:.5rem .75rem;border-radius:6px;font-family:'DM Mono',monospace;font-size:.8rem;outline:none;transition:border-color .2s}
+
+
+
+
+
+
+
+
 .d-form-group input:focus{border-color:var(--accent)}
 .d-preview-box{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:.5rem .75rem;margin-top:.5rem;font-size:.65rem;color:var(--muted);display:none;line-height:1.5}
 .d-preview-box span{color:var(--accent)}
-.d-btn{margin-top:1rem;width:100%;padding:.65rem;background:linear-gradient(135deg,var(--accent),#00b894);border:none;border-radius:8px;color:var(--bg);font-family:'Plus Jakarta Sans',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:opacity .2s,transform .1s}
-.d-btn:hover{opacity:.9;transform:translateY(-1px)}
+
+
 .d-btn:active{transform:translateY(0)}
-.d-btn.init-mode{background:linear-gradient(135deg,#627eea,#a29bfe);color:#fff}
-.d-btn-link{background:none;border:none;font-family:'DM Mono',monospace;font-size:.65rem;color:var(--muted);text-decoration:underline;cursor:pointer;display:block;margin:.75rem auto 0;text-align:center}
+
+
 .d-save-indicator{font-size:.65rem;color:var(--muted);text-align:center;margin-top:.75rem}
 
-@media(max-width:1100px){.d-grid-top{grid-template-columns:1fr 1fr}.d-grid-mid,.d-grid-bottom{grid-template-columns:1fr}}
-@media(max-width:600px){.d-grid-top{grid-template-columns:1fr}.d-form-grid{grid-template-columns:1fr}.d-price-strip{flex-wrap:wrap}}
+@media(max-width:1100px){.d-grid-mid,.d-grid-bottom{grid-template-columns:1fr}}
+@media(max-width:600px){}
 
 /* AUTH FIREBASE */
 .auth-gate{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(circle at top,rgba(0,212,170,.12),transparent 35%),rgba(8,12,16,.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
@@ -424,19 +424,19 @@ tr:last-child td{border-bottom:none}
 .patr-total-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.4rem;font-weight:700;letter-spacing:-.03em}
 .patr-total-sub{font-size:.65rem;color:var(--accent);margin-top:.2rem}
 .patr-cats{display:flex;flex-direction:column;gap:8px}
-.patr-cat{background:var(--surface2);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .2s}
-.patr-cat:hover{border-color:rgba(255,255,255,.12)}
-.patr-cat-row{display:flex;align-items:center;padding:13px 16px;gap:12px;cursor:pointer;transition:background .15s}
+.patr-cat{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .2s}
+.patr-cat:hover{border-color:rgba(255,255,255,.15)}
+.patr-cat-row{display:flex;align-items:center;padding:14px 16px;gap:12px;cursor:pointer;transition:background .15s}
 .patr-cat-row:hover{background:rgba(255,255,255,.03)}
 .patr-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .patr-left{flex:1;min-width:0}
-.patr-cat-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:600;color:var(--text)}
-.patr-cat-perf{font-size:.72rem;margin-top:3px}
-.patr-cat-sub{font-size:.72rem;color:var(--muted);margin-top:3px}
+.patr-cat-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:500;color:var(--text);letter-spacing:-.01em}
+.patr-cat-perf{font-size:12px;margin-top:4px}
+.patr-cat-sub{font-size:12px;color:var(--muted);margin-top:4px}
 .patr-right{text-align:right;flex-shrink:0}
-.patr-cat-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:1.35rem;font-weight:700;letter-spacing:-.03em;line-height:1;color:var(--text)}
-.patr-cat-alloc{font-size:.65rem;color:var(--muted);margin-top:4px}
-.patr-chev{font-size:.75rem;color:var(--muted);margin-left:8px;flex-shrink:0;transition:transform .22s;display:inline-block}
+.patr-cat-val{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:500;letter-spacing:-.03em;line-height:1;color:var(--text)}
+.patr-cat-alloc{font-size:11px;color:var(--muted);margin-top:4px;letter-spacing:.01em}
+.patr-chev{font-size:12px;color:var(--muted);margin-left:8px;flex-shrink:0;transition:transform .22s;display:inline-block}
 .patr-chev.open{transform:rotate(180deg)}
 .patr-pos{color:var(--accent)}
 .patr-neg{color:var(--red)}
@@ -444,14 +444,14 @@ tr:last-child td{border-bottom:none}
 .patr-body{display:none;border-top:1px solid var(--border);padding:10px 12px;flex-direction:column;gap:6px}
 .patr-body.open{display:flex}
 
-.patr-pos-item{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:border-color .15s}
+.patr-pos-item{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:border-color .15s}
 .patr-pos-item:hover{border-color:rgba(255,255,255,.15)}
 .patr-pos-icon{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;letter-spacing:.02em}
 .patr-pos-left{flex:1;min-width:0}
-.patr-pos-name{font-size:.8rem;font-weight:600;color:var(--text);font-family:'Plus Jakarta Sans',sans-serif}
-.patr-pos-sub{font-size:.65rem;color:var(--muted);margin-top:1px;font-family:'DM Mono',monospace}
+.patr-pos-name{font-size:13px;font-weight:500;color:var(--text);font-family:'Plus Jakarta Sans',sans-serif}
+.patr-pos-sub{font-size:11px;color:var(--muted);margin-top:1px;font-family:'DM Mono',monospace}
 .patr-pos-right{text-align:right;flex-shrink:0}
-.patr-pos-val{font-size:.85rem;font-weight:600;color:var(--text);font-family:'Plus Jakarta Sans',sans-serif}
+.patr-pos-val{font-size:14px;font-weight:500;color:var(--text);font-family:'Plus Jakarta Sans',sans-serif}
 .patr-pos-perf{font-size:.65rem;margin-top:2px}
 .patr-pos-edit{font-size:.7rem;color:var(--muted);margin-left:6px}
 
@@ -643,11 +643,14 @@ tr:last-child td{border-bottom:none}
       </div>
     </div>
     <div class="m-patr-wrap">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px">
-        <div style="font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Répartition</div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:14px">
+        <div>
+          <div style="font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px">Patrimoine</div>
+          <div id="m-patr-total-val" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:24px;font-weight:500;letter-spacing:-.04em;color:var(--text)">—</div>
+        </div>
         <div style="text-align:right">
-          <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:-.03em" id="m-patr-total-val">—</div>
-          <div style="font-size:.65rem;color:var(--accent)" id="m-patr-total-sub">—</div>
+          <div id="m-patr-total-sub" style="font-size:12px;color:var(--accent)">—</div>
+          <div style="font-size:10px;color:var(--muted);margin-top:2px">3 catégories · live</div>
         </div>
       </div>
       <div class="patr-cats" id="m-patr-cats">
@@ -883,64 +886,7 @@ tr:last-child td{border-bottom:none}
     </div>
   </header>
 
-  <div class="d-price-strip">
-    <div class="d-price-item">
-      <div>
-        <div class="d-price-ticker-label">Bitcoin / EUR</div>
-        <div class="d-price-ticker-val" id="d-btc-price">Chargement…</div>
-      </div>
-      <div>
-        <div class="d-price-ticker-chg neu" id="d-btc-change">—</div>
-        <div class="d-price-ticker-time" id="d-btc-time">—</div>
-      </div>
-    </div>
-    <div class="d-price-item">
-      <div>
-        <div class="d-price-ticker-label">S&P 500</div>
-        <div class="d-price-ticker-val" id="d-sp500-price">Chargement…</div>
-      </div>
-      <div>
-        <div class="d-price-ticker-chg neu" id="d-sp500-change">—</div>
-        <div class="d-price-ticker-time" id="d-sp500-time">—</div>
-      </div>
-    </div>
-    <div class="d-price-item" style="border-right:none;margin-left:auto">
-      <div>
-        <div class="d-price-ticker-label">Valorisation BTC live</div>
-        <div class="d-price-ticker-val" id="d-btc-live-val">—</div>
-      </div>
-      <div>
-        <div class="d-price-ticker-chg neu" id="d-btc-live-diff">—</div>
-      </div>
-    </div>
-  </div>
 
-  <div class="d-grid-top">
-    <div class="d-card">
-      <div class="d-card-label">Patrimoine total</div>
-      <div class="d-card-value" id="d-kpi-total">—</div>
-      <div class="d-card-sub">Toutes enveloppes · live</div>
-      <div class="d-card-badge" id="d-kpi-total-badge"></div>
-    </div>
-    <div class="d-card d-stat-btc">
-      <div class="d-card-label">BTC accumulé</div>
-      <div class="d-card-value" id="d-kpi-btc">—</div>
-      <div class="d-card-sub">Objectif : 1 BTC</div>
-      <div class="d-card-badge d-badge-warn" id="d-kpi-btc-badge"></div>
-    </div>
-    <div class="d-card d-stat-pea">
-      <div class="d-card-label">PEA SP500</div>
-      <div class="d-card-value" id="d-kpi-pea">—</div>
-      <div class="d-card-sub" id="d-kpi-pea-sub">—</div>
-      <div class="d-card-badge d-badge-info">⏱ Fiscalité optimisée</div>
-    </div>
-    <div class="d-card d-stat-fire">
-      <div class="d-card-label">Taux FIRE</div>
-      <div class="d-card-value" id="d-kpi-fire-rate">—</div>
-      <div class="d-card-sub">Objectif : 3 000 €/mois passifs</div>
-      <div class="d-card-badge d-badge-warn" id="d-kpi-fire-years"></div>
-    </div>
-  </div>
 
   <div class="d-grid-mid">
     <div class="d-card" style="--card-accent:var(--accent)">
@@ -991,11 +937,14 @@ tr:last-child td{border-bottom:none}
   <div class="d-grid-bottom">
     <div style="display:flex;flex-direction:column;gap:1.5rem">
       <div class="d-card" style="--card-accent:var(--accent);padding:1.2rem 1.2rem 1rem">
-        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.8rem">
-          <div class="patr-section">Répartition du patrimoine</div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:1rem">
+          <div>
+            <div style="font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Patrimoine</div>
+            <div class="patr-total-val" id="d-patr-total-val" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:26px;font-weight:500;letter-spacing:-.04em;color:var(--text)">—</div>
+          </div>
           <div style="text-align:right">
-            <div class="patr-total-val" id="d-patr-total-val">—</div>
-            <div class="patr-total-sub" id="d-patr-total-sub">—</div>
+            <div class="patr-total-sub" id="d-patr-total-sub" style="font-size:13px;color:var(--accent)">—</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:3px">3 catégories · live</div>
           </div>
         </div>
         <div class="patr-cats" id="patr-cats">
@@ -1218,40 +1167,6 @@ tr:last-child td{border-bottom:none}
       </div>
     </div>
 
-    <div class="d-card" style="--card-accent:var(--accent)">
-      <div class="d-mode-badge" id="d-mode-badge">
-        <div class="d-mode-dot" id="d-mode-dot" style="background:var(--accent)"></div>
-        <span class="d-mode-label" id="d-mode-label">Chargement…</span>
-      </div>
-      <div id="d-mode-init">
-        <div class="d-edit-title">🚀 Initialisation — Saisis ton patrimoine actuel</div>
-        <div class="d-form-grid">
-          <div class="d-form-group"><label>Livret A — total actuel (€)</label><input type="number" id="d-input-livret" placeholder="ex: 6300"></div>
-          <div class="d-form-group"><label>USDT Crypto — total (€)</label><input type="number" id="d-input-usdt" placeholder="ex: 25000"></div>
-          <div class="d-form-group"><label>PEA SP500 — valeur actuelle (€)</label><input type="number" id="d-input-pea" placeholder="ex: 8000"></div>
-          <div class="d-form-group"><label>BTC investi — montant € (€)</label><input type="number" id="d-input-btc-eur" placeholder="ex: 1000"></div>
-          <div class="d-form-group"><label>BTC accumulé — quantité</label><input type="number" id="d-input-btc-qty" placeholder="ex: 0.012" step="0.0001"></div>
-          <div class="d-form-group"><label>Épargne mensuelle (€)</label><input type="number" id="d-input-savings" placeholder="ex: 1500"></div>
-          <div class="d-form-group" style="grid-column:1/-1"><label>Adresse Bitcoin Bitstack (optionnel — solde auto)</label><input type="text" id="d-input-btc-addr" placeholder="bc1q..." style="font-family:'DM Mono',monospace;font-size:11px"></div>
-        </div>
-        <button class="d-btn init-mode" onclick="saveAndSync()">🚀 Initialiser mon patrimoine</button>
-      </div>
-      <div id="d-mode-monthly" style="display:none">
-        <div class="d-edit-title">➕ Apports du mois — saisis uniquement tes nouveaux investissements</div>
-        <div class="d-form-grid">
-          <div class="d-form-group"><label>+ Livret A ce mois (€)</label><input type="number" id="d-add-livret" value="0" min="0"></div>
-          <div class="d-form-group"><label>+ USDT ce mois (€)</label><input type="number" id="d-add-usdt" value="0" min="0"></div>
-          <div class="d-form-group"><label>+ PEA SP500 ce mois (€)</label><input type="number" id="d-add-pea" value="0" min="0"></div>
-          <div class="d-form-group"><label>+ BTC acheté — montant € (€)</label><input type="number" id="d-add-btc-eur" value="0" min="0"></div>
-          <div class="d-form-group"><label>+ BTC acheté — quantité</label><input type="number" id="d-add-btc-qty" value="0" step="0.0001" min="0"></div>
-          <div class="d-form-group"><label>Épargne/mois (mise à jour)</label><input type="number" id="d-add-savings"></div>
-        </div>
-        <div class="d-preview-box" id="d-preview-box"><span id="d-preview-text">—</span></div>
-        <button class="d-btn" onclick="saveAndSync()">☁️ Enregistrer & synchroniser</button>
-        <button class="d-btn-link" onclick="switchToInit()">Corriger un total (mode initialisation)</button>
-      </div>
-      <div class="d-save-indicator" id="d-save-indicator">💾 Sauvegarde auto active</div>
-    </div>
   </div>
 
 </div>
@@ -1383,17 +1298,17 @@ async function fetchPrices() {
   } else { document.getElementById('m-sp-price').textContent='Marché fermé'; }
   // Desktop
   if(prices.btcEur){
-    document.getElementById('d-btc-price').textContent=prices.btcEur.toLocaleString('fr-FR',{maximumFractionDigits:0})+' €';
-    const chg=prices.btcChange||0; const el=document.getElementById('d-btc-change');
+  // REMOVED: document.getElementById('d-btc-price').textContent=prices.btcEur.toLocaleString('fr-FR',{maximumFractionDigits:0})+' €';
+  // REMOVED: const chg=prices.btcChange||0; const el=document.getElementById('d-btc-change');
     el.textContent=(chg>=0?'▲ +':'▼ ')+Math.abs(chg).toFixed(2)+'% (24h)'; el.className='d-price-ticker-chg '+(chg>=0?'pos':'neg');
-    document.getElementById('d-btc-time').textContent='Màj '+now;
-  } else { document.getElementById('d-btc-price').textContent='Indisponible'; }
+  // REMOVED: document.getElementById('d-btc-time').textContent='Màj '+now;
+  // REMOVED: } else { document.getElementById('d-btc-price').textContent='Indisponible'; }
   if(prices.sp500){
-    document.getElementById('d-sp500-price').textContent=prices.sp500.toLocaleString('fr-FR',{maximumFractionDigits:0})+' pts';
-    const chg=prices.sp500Change||0; const el=document.getElementById('d-sp500-change');
+  // REMOVED: document.getElementById('d-sp500-price').textContent=prices.sp500.toLocaleString('fr-FR',{maximumFractionDigits:0})+' pts';
+  // REMOVED: const chg=prices.sp500Change||0; const el=document.getElementById('d-sp500-change');
     el.textContent=(chg>=0?'▲ +':'▼ ')+Math.abs(chg).toFixed(2)+'%'; el.className='d-price-ticker-chg '+(chg>=0?'pos':'neg');
-    document.getElementById('d-sp500-time').textContent='Màj '+now;
-  } else { document.getElementById('d-sp500-price').textContent='Marché fermé'; }
+  // REMOVED: document.getElementById('d-sp500-time').textContent='Màj '+now;
+  // REMOVED: } else { document.getElementById('d-sp500-price').textContent='Marché fermé'; }
   // Live BTC record
   if(portfolioHistory.length>0&&data.btcQty>0&&prices.btcEur){
   // Solde Bitstack auto (si adresse configurée)
@@ -1648,23 +1563,23 @@ function render() {
   patrRender();
 
   // ── DESKTOP RENDER
-  document.getElementById('d-btc-live-val').textContent=prices.btcEur?fmt(btcLive):'—';
-  const diffEl=document.getElementById('d-btc-live-diff');
+  // REMOVED: document.getElementById('d-btc-live-val').textContent=prices.btcEur?fmt(btcLive):'—';
+  // REMOVED: const diffEl=document.getElementById('d-btc-live-diff');
   if(prices.btcEur){ const sign=btcDiff>=0?'+':''; diffEl.textContent=sign+fmt(btcDiff)+' vs saisie'; diffEl.className='d-price-ticker-chg '+(btcDiff>=0?'pos':'neg'); }
-  document.getElementById('d-kpi-total').textContent=fmt(total);
-  document.getElementById('d-kpi-total-badge').textContent='▲ '+firePct.toFixed(1)+'% de l\'objectif FIRE';
-  document.getElementById('d-kpi-btc').textContent=data.btcQty.toFixed(4)+' BTC';
-  document.getElementById('d-kpi-btc-badge').textContent=(data.btcQty*100).toFixed(2)+'% de l\'objectif 1 BTC';
-  document.getElementById('d-kpi-pea').textContent=fmt(data.pea);
-  document.getElementById('d-kpi-pea-sub').textContent='Plafond restant : '+fmt(Math.max(0,20000-data.pea));
-  document.getElementById('d-kpi-fire-rate').textContent=firePct.toFixed(1)+'%';
+  // REMOVED: document.getElementById('d-kpi-total').textContent=fmt(total);
+  // REMOVED: document.getElementById('d-kpi-total-badge').textContent='▲ '+firePct.toFixed(1)+'% de l\'objectif FIRE';
+  // REMOVED: document.getElementById('d-kpi-btc').textContent=data.btcQty.toFixed(4)+' BTC';
+  // REMOVED: document.getElementById('d-kpi-btc-badge').textContent=(data.btcQty*100).toFixed(2)+'% de l\'objectif 1 BTC';
+  // REMOVED: document.getElementById('d-kpi-pea').textContent=fmt(data.pea);
+  // REMOVED: document.getElementById('d-kpi-pea-sub').textContent='Plafond restant : '+fmt(Math.max(0,20000-data.pea));
+  // REMOVED: document.getElementById('d-kpi-fire-rate').textContent=firePct.toFixed(1)+'%';
   const fireAge=(24+parseFloat(fireYears)).toFixed(0);
-  document.getElementById('d-kpi-fire-years').textContent='⏳ FIRE dans ~'+fireYears+' ans (≈ '+fireAge+' ans)';
-  document.getElementById('d-fire-current').textContent=fmt(total);
-  document.getElementById('d-fire-pct').textContent=firePct.toFixed(1)+'%';
-  document.getElementById('d-fire-gap').textContent=fmtK(FIRE_TARGET-total);
-  document.getElementById('d-fire-years').textContent=fireYears+' ans';
-  document.getElementById('d-fire-progress').style.width=firePct+'%';
+  // REMOVED: document.getElementById('d-kpi-fire-years').textContent='⏳ FIRE dans ~'+fireYears+' ans (≈ '+fireAge+' ans)';
+  // REMOVED: document.getElementById('d-fire-current').textContent=fmt(total);
+  // REMOVED: document.getElementById('d-fire-pct').textContent=firePct.toFixed(1)+'%';
+  // REMOVED: document.getElementById('d-fire-gap').textContent=fmtK(FIRE_TARGET-total);
+  // REMOVED: document.getElementById('d-fire-years').textContent=fireYears+' ans';
+  // REMOVED: document.getElementById('d-fire-progress').style.width=firePct+'%';
   document.getElementById('d-lastUpdate').textContent='Màj '+new Date().toLocaleDateString('fr-FR',{day:'2-digit',month:'long',year:'numeric'});
   dDrawDonut(segs,total);
 }
@@ -1933,7 +1848,7 @@ function patrRender() {
   // BTC P&L global
   const btcCost  = data.btcPru ? data.btcQty * data.btcPru : data.btcEur;
   const btcPnl   = btcLive - btcCost;
-  const btcPnlStr = btcCost > 0 ? (btcPnl >= 0 ? '+' : '') + fmt(btcPnl) + ' depuis l'achat' : 'Auto · live';
+  const btcPnlStr = btcCost > 0 ? (btcPnl >= 0 ? '+' : '') + fmt(btcPnl) + ' depuis l\'achat' : 'Auto · live';
   ['d-patr-total-sub', 'm-patr-total-sub'].forEach(id => {
     const el = document.getElementById(id); if (el) { el.textContent = btcPnlStr; el.className = btcPnl >= 0 ? 'patr-total-sub' : 'patr-total-sub patr-neg'; }
   });
