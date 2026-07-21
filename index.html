@@ -1892,7 +1892,7 @@ function patrRender() {
       el.className   = 'patr-cat-perf ' + (btcPnl >= 0 ? 'patr-pos' : 'patr-neg');
     });
   } else {
-    document.querySelectorAll('#patr-crypto-perf').forEach(el => { el.textContent = 'Configurez l'adresse →'; });
+    document.querySelectorAll('#patr-crypto-perf').forEach(el => { el.textContent = 'Configurez l\'adresse →'; });
   }
   // Adresse affichée tronquée
   const addr = data.btcAddress;
@@ -1909,6 +1909,14 @@ function patrRender() {
   });
 }
 
+// ── INIT AU CHARGEMENT ──────────────────────────────
+document.addEventListener('firebase-ready', () => {});
+
+// Initialisation synchrone (données localStorage)
+render();
+patrRender();
+drawChart(mCurrentTf, 'm');
+drawChart(dCurrentTf, 'd');
 </script>
 </body>
 </html>
